@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Song</title>
+    <link rel="stylesheet" type="text/css" href="stylesaddSongs.css" />
+</head>
+
+<body>
+    <div class="sidebar">
+
+        <div>
+            <span>Usuario: Fabian Figueredo</span><br>
+            <a href="file:///C:/Users/Fabian/Desktop/plataformaDisco/index.html" target="_self">
+                <img src="logo.jpg" alt="Icono de la banda" class="band-icon">
+            </a>
+        </div>
+        <hr>
+        <div>
+            <a href="file:///C:/Users/Fabian/Desktop/plataformaDisco/home.html" target="_self">See other albums</a>
+        </div>
+        <hr>
+        <div>
+            <a href="file:///C:/Users/Fabian/Desktop/plataformaDisco/editAlbum.html" target="_self">Edit Album</a>
+        </div>
+        <hr>
+        <div>
+            <a href="file:///C:/Users/Fabian/Desktop/plataformaDisco/addsong.html" target="_self">Add Songs</a>
+        </div>
+        <hr>
+        <div>
+            <a href="file:///C:/Users/Fabian/Desktop/plataformaDisco/login.html" target="_self">Log out</a>
+        </div>
+        <hr>
+    </div>
+    <div class="content">
+        <div>
+            <h3>Add Song
+        </div>
+        <br>
+        <form method="post" action="procesar_formulario.php">
+            <label for="titulo">Título</label>
+
+            <input type="text" id="titulo" name="titulo" required>
+            <br></br>
+            <label for="Duracion">Duración</label>
+
+            <input type="text" id="Duracion" name="Duracion" required>
+
+            <br></br>
+            <label for="url_imagen">Link</label>
+
+            <input type="text" id="url_link" name="url_link" required>
+            <br></br>
+            <br></br>
+            <button type="submit">Guardar</button>
+            <button type="submit">Cancelar</button>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>AddAlbum</title>
+    <link rel="stylesheet" type="text/css" href="stylesaddAlbum.css"> 
+</head>
+<body>
+    <div class="sidebar">
+       
+        <div>
+            <span>Usuario: Fabian Figueredo</span><br>
+            <a href="file:///C:/Users/Fabian/Desktop/plataformaDisco/index.html">
+                <img src="logo.jpg" alt="Icono de la banda" class="band-icon">
+            </a>
+        </div>
+        <hr>
+        <div>
+            <a href="file:///C:/Users/Fabian/Desktop/plataformaDisco/home.html">Other Albums</a>
+        </div>
+        <hr>
+        <div>
+            <a href="file:///C:/Users/Fabian/Desktop/plataformaDisco/editAlbum.html">Edit Album</a>
+        </div>
+        <hr>
+        <div>
+            <a href="file:///C:/Users/Fabian/Desktop/plataformaDisco/addsong.html">Add Songs</a>
+        </div>
+        <hr>
+        <div>
+            <a href="file:///C:/Users/Fabian/Desktop/plataformaDisco/login.html">Log out</a>
+        </div>
+        <hr>
+    </div>
+   
+    <div class="content">
+        <div><h3>Nuevo Álbum</div>
+        <br>
+        <form method="post" action="procesar_formulario.php">
+            <label for="titulo">Título</label>
+            
+            <input type="text" id="titulo" name="titulo"required>
+            <br></br>
+            <label for="ano_lanzamiento">Año de lanzamiento del álbum</label>
+            
+            <input type="text" id="ano_lanzamiento" name="ano_lanzamiento" required>
+            <br></br>
+            <label for="descripcion">Descripción</label>
+           
+            <textarea id="descripcion" name="descripcion"  rows="8" cols="100" required></textarea>
+            <br></br>
+            <label for="url_imagen">Imagen</label>
+            
+            <input type="text" id="url_imagen" name="url_imagen" placeholder="Ingrese la URL de la imagen aquí" required>
+            <br></br>
+            <br></br>
+            <button type="submit">Agregar Álbum</button>
+        </form>
+    </div>
+</body>
+</html>
